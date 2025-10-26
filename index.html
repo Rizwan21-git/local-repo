@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minimal Landing — Local Demo</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">TealWave</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>Design that speaks clearly.</h1>
+          <p class="lead">A tiny, responsive landing page built using your files. Fast, readable, and mobile-first.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#features">See features</a>
+            <a class="btn ghost" href="#about">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="container features">
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Layouts that adapt to any screen size using CSS grid and flexbox.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Good color contrast and simple semantic markup for screen readers.</p>
+        </article>
+        <article class="card">
+          <h3>Lightweight</h3>
+          <p>No frameworks — pure HTML & CSS for quick iteration and learning.</p>
+        </article>
+      </section>
+
+      <section id="about" class="container about">
+        <h2>About this demo</h2>
+        <p>This page was created by updating your existing `index.html` and `style.css` to show a small, attractive landing page. Use it as a starting point for experiments or learning.</p>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <p>Try editing the files in the workspace and refresh this page to see changes.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> TealWave — Built from your repo</small>
+      </div>
+    </footer>
+
+    <script>
+      // small runtime nicety: set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
